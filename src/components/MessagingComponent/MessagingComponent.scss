@@ -1,0 +1,29 @@
+.stick-bottom {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: black;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.send-button {
+  margin-left: 10px;
+  margin-right: 63.8px;
+  flex: 1;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: black
+  }
+}
