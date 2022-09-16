@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './MessagingComponent.scss';
 
-function MessagingComponent() {
+function MessagingComponent({ messages, setMessages }) {
   const [message, setMessage] = useState('');
   const handleChange = (e) => {
     setMessage(e.target.value);
+  };
+
+  const handleSending = () => {
+    setMessages((prev) => prev.push(message));
   };
   return (
     <div className="stick-bottom">
@@ -16,7 +20,7 @@ function MessagingComponent() {
         cols="150"
       />
       <form>
-        <button type="submit" className="send-button">
+        <button type="submit" className="send-button" onClick={handleSending}>
           Send!
         </button>
       </form>

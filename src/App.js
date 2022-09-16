@@ -9,7 +9,7 @@ function App() {
     <div data-test="appComponent">
       <Header />
       <Body messages={messages} />
-      <MessagingComponent />
+      <MessagingComponent messages={messages} setMessages={setMessages} />
     </div>
   );
 }
